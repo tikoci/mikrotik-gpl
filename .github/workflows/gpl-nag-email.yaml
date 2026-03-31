@@ -11,7 +11,8 @@ on:
         required: true
         default: "support@mikrotik.com,mt@mikrotik.com"
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 3 * * 3"
+    - cron: "0 3 * * 6"
 
 permissions: write-all
 
