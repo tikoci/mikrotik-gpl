@@ -16,7 +16,7 @@ TIKOCI will continue to advocate for MikroTik providing regular, on-going, per-b
 
 ### Implementation Details
 
-When the GPL/open source code is obtained from MikroTik, it will be manually checked into this repo.    So this project mainly _stores_ MikroTik's GPL disclosure publicly.  So the only "code" here is a GitHub Action, `gpl-nag-email.yaml`.  The build script checks MikroTik website for the current "stable" and "testing" versions of RouterOS.  If a version is NOT found in GitHub [Releases](https://github.com/tikoci/mikrotik-gpl/releases), the build will email MikroTik to obtain the GPL source.  The build is schedule to check for new releases daily, and will not send emails if a version has already been requested.
+When the GPL/open source code is obtained from MikroTik, it will be manually checked into this repo.    So this project mainly _stores_ MikroTik's GPL disclosure publicly.  So the only "code" here is a GitHub Action, `gpl-nag-email.yaml`.  The build script checks MikroTik website for the current "stable" version of RouterOS.  If a version is NOT found in GitHub [Releases](https://github.com/tikoci/mikrotik-gpl/releases), the build will email MikroTik to obtain the GPL source.  The build is scheduled to check for new stable releases twice weekly, and will not send emails if a version has already been requested.
 
 When MikroTik response with source, the provided disclosure will be in Releases.  Additional, the expanded contents will be stored in repo by RouterOS version, or date received if version is unclear.  
 
